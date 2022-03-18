@@ -1,0 +1,24 @@
+@import "reset.css";
+#index-main{
+    text-align: center;
+}
+
+#header-png{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
+#header-text{
+    display: flex;
+
+    text-align: center;
+}
+
+#add-button{
+    display: flex;
+    margin-left: 60px;
+    width: 100px;
+}
