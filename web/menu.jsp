@@ -30,10 +30,13 @@
                         <a class="nav-link" href="#">맛집 검색하기</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">맛집 등록하기 - Admin</a>
+                        <a class="nav-link" href="register.jsp">맛집 등록하기 - Admin🔐</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">맛집 수정/삭제 - Admin</a>
+                        <a class="nav-link" href="#">맛집 수정/삭제 - Admin🔐</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">사이트 동작원리</a>
                     </li>
                 </ul>
             </div>
