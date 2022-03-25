@@ -9,15 +9,25 @@
 <html>
 <head>
     <title>식당 등록하기</title>
-    <link href="css/input.css" rel="stylesheet">
+    <link href="../css/input.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <jsp:include page="menu.jsp"/>
+    <jsp:include page="../menu.jsp"/>
     <h2 style="margin-left: 100px; margin-top: 10px;"><b>우리동네 맛집 등록하기 🍽</b></h2>
-    <form action="registerPro.jsp" method="post">
+    <form action="register/registerPro.jsp" method="post">
         <div class="input-group mb-3">
             <input type="text" name="dangun" id="address_dangun" class="form-control" placeholder="맛집 동네(자동등록)" aria-label="Recipient's username" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example" name="type">
+                <option value="null" selected>맛집 종류를 선택하세요.</option>
+                <option value="한식">한식</option>
+                <option value="중식">중식</option>
+                <option value="일식">일식</option>
+                <option value="양식">양식</option>
+                <option value="디저트">디저트</option>
+            </select>
         </div>
         <div class="input-group mb-3">
             <input type="text" name="name" class="form-control" placeholder="등록할 맛집 이름을 입력하세요." aria-label="Recipient's username">

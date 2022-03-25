@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.jsp">맛집Bot</a>
+            <a class="navbar-brand" href="/index-do.jsp">당근맛집🥕</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,13 +24,13 @@
                         <a class="nav-link" href="#">맛집조회</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">한눈에 보는 맛집</a>
+                        <a class="nav-link" href="/index.jsp">한눈에 보는 맛집</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">맛집 검색하기</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.jsp">맛집 등록하기 - Admin🔐</a>
+                        <a class="nav-link" href="register/register.jsp">맛집 등록하기 - Admin🔐</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">맛집 수정/삭제 - Admin🔐</a>
@@ -39,6 +39,10 @@
                         <a class="nav-link" href="#">사이트 동작원리</a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <a href="/UserLogin/login.jsp">로그인</a> &nbsp; &nbsp;
+                <a href="/UserLogin/#">로그아웃</a>
             </div>
         </div>
     </nav>
