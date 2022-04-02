@@ -8,12 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login</title>
+    <title>로그인 부탁드려요!☺️</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <jsp:include page="/menu.jsp"/>
-    <h3 style="text-align: center; margin-top: 80px"><b>Login</b></h3>
+    <h3 style="text-align: center; margin-top: 40px"><b>Login</b></h3>
     <div style="display:flex; align-items: center; justify-content: center;">
         <form method="post" action="loginPro.jsp">
             <div class="mb-3">

@@ -20,7 +20,7 @@
             Connection conn = null;
             PreparedStatement pstmt = null;
             String driver = "com.mysql.jdbc.Driver";
-            String url = "jdbc:mysql://localhost:3306/Michelin?useSSL=false&serverTimezone=Asia/Seoul";
+            String url = "jdbc:mysql://localhost:3306/Michelin?allowPublicKeyRetrieval=true&useSSL=false";
             String uid = "root";
             String pwd = "database";
             ResultSet rs = null;

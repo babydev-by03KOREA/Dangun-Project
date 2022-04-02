@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">맛집조회</a>
+                        <a class="nav-link" href="/index.jsp">맛집조회</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.jsp">한눈에 보는 맛집</a>
+                        <a class="nav-link" href="#">한눈에 보는 맛집</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">맛집 검색하기</a>
@@ -41,8 +41,8 @@
                 </ul>
             </div>
             <div>
-                <a href="/UserLogin/login.jsp">로그인</a> &nbsp; &nbsp;
-                <a href="/UserLogin/#">로그아웃</a>
+                <a href="/UserLogin/login.jsp" style="text-decoration: none; color: darkslategray">로그인</a> &nbsp; &nbsp;
+                <a href="/join/mainjoin.jsp" style="text-decoration: none; color: darkslategray">회원가입🔑</a>
             </div>
         </div>
     </nav>

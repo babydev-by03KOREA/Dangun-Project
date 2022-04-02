@@ -19,7 +19,7 @@ To change this template use File | Settings | File Templates.
         Connection conn = null;
         PreparedStatement pstmt = null;
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/Michelin?useSSL=false&serverTimezone=Asia/Seoul";
+        String url = "jdbc:mysql://localhost:3306/Michelin?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false";
         String uid = "root";
         String pwd = "database";
         String query = "insert into delicious values(?,?,?,?,?,?,?,?)";

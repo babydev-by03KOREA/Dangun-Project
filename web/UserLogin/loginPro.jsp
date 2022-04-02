@@ -10,11 +10,14 @@
 <%@ page import="java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
 <jsp:useBean id="user" class="user.UserData" scope="page"/>
-<jsp:setProperty name="user" property="userID" /> // login 페이지에서 사용자 한명의 userID값을 받아 userID에 넣어줌.
+<%--scope : 자바빈 객체가 저장될 영역을 지정. page, request, session, application 중 하나를 값으로 갖는다. 기본값은 page.--%>
+<jsp:setProperty name="user" property="userID" />
+<%--login 페이지에서 사용자 한명의 userID값을 받아 userID에 넣어줌.--%>
 <jsp:setProperty name="user" property="userPassword" />
+<%--login 페이지에서 사용자 한명의 userPassword값을 받아 userPassword에 넣어줌.--%>
 <html>
 <head>
-    <title>Title</title>
+    <title>LoginProgressed</title>
 </head>
 <body>
     <%
