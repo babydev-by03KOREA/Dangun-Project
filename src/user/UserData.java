@@ -7,6 +7,7 @@ public class UserData {
     private String userName;
     private String userGender;
     private String userEmail;
+    private String userAgreement;
 
     public String getUserID() {
         return userID;
@@ -46,6 +47,14 @@ public class UserData {
 
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
+    }
+
+    public String getUserAgreement() {
+        return userAgreement;
+    }
+
+    public void setUserAgreement(String userAgreement) {
+        this.userAgreement = userAgreement;
     }
 
 }

@@ -21,9 +21,21 @@
 </head>
 <body>
     <%
+        String UserID = null;
+        if(session.getAttribute(UserID) != null){
+            UserID = (String) session.getAttribute("UserID");
+        }
+        if (UserID != null) {
+            PrintWriter script = response.getWriter();
+            script.println("<script>");
+            script.println("alert('이미 로그인이 되어있습니다.')");
+            script.println("location.href = 'index-do.jsp'");
+            script.println("</script>");
+        }
         userDAO UserDAO = new userDAO();
         int result = UserDAO.login(user.getUserID(), user.getUserPassword());
         if (result == 1) {
+            session.setAttribute("UserID", user.getUserID());
             PrintWriter script = response.getWriter();
             script.println("<script>");
             script.println("location.href = '/index.jsp'");

@@ -39,27 +39,27 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputName" class="form-label">가입하실 성함을 입력하세요.</label>
-                <input type="text" class="form-control" id="exampleInputName" name="userPassword" placeholder="성함을 입력하세요.">
+                <input type="text" class="form-control" id="exampleInputName" name="userName" placeholder="성함을 입력하세요.">
             </div>
             <div class="mb-3">
-                <label for="exampleInputName" class="form-label">회원님의 성별을 선택해주세요</label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="exampleInputName" class="form-label">회원님의 성별을 선택해주세요.</label>
+                <select class="form-select" aria-label="Default select example" name="userGender">
                     <option selected value="null">--성별 선택--</option>
                     <%-- 유효성 검사 시, value = null일 경우 alert --%>
-                    <option value="남성" name="male">남성</option>
-                    <option value="여성" name="female">여성</option>
+                    <option value="남자" name="male">남자</option>
+                    <option value="여자" name="female">여자</option>
                     <option value="무응답" name="no-answer">무응답</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">가입하실 E-Mail 주소를 입력해주세요.</label>
                 <%-- browser Default Service --%>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="'@'가 들어간 E-mail을 입력해주세요.">
+                <input type="email" name="userEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="'@'가 들어간 E-mail을 입력해주세요.">
                 <div id="emailHelp" class="form-text">E-Mail로 비밀번호 분실 시 임시 비밀번호가 발송됩니다. 정확한 E-Mail 주소를 입력바랍니다!</div>
             </div>
             <p style="font-size: 16px">약관 및 개인정보 수집 이용에 동의해주세요.</p>
             <div class="form-check" id="box1"> <!--CheckBox Area / BootStrap-->
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="userAgreement" value="Y">
                 <label class="form-check-label" for="flexCheckDefault"><strong>개인정보 수집에 동의합니다(필수) &nbsp;</strong></label>
                 <button type="button" class="btn btn-secondary btn-sm" onclick="popup()">약관보기</button>
             </div>
