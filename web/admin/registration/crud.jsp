@@ -1,6 +1,6 @@
-<%@ page import="java.util.ArrayList" %>
 <%@ page import="Restaurant.ResDTO" %>
 <%@ page import="Restaurant.ResDAO " %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,6 +15,7 @@
 
 <table class="table table-striped" style="margin-top: 50px;text-align: center;">
     <%
+
         request.setCharacterEncoding("UTF-8");
         ResDAO rdao = new ResDAO();
         ArrayList<ResDTO> list = rdao.ResList();
