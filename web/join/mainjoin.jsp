@@ -58,7 +58,7 @@
                 <div id="emailHelp" class="form-text">E-Mail로 비밀번호 분실 시 임시 비밀번호가 발송됩니다. 정확한 E-Mail 주소를 입력바랍니다!</div>
             </div>
             <p style="font-size: 16px">약관 및 개인정보 수집 이용에 동의해주세요.</p>
-            <div class="form-check" id="box1"> <!--CheckBox Area / BootStrap-->
+            <div class="form-check" id="box1"> <%--CheckBox Area / BootStrap--%>
                 <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="userAgreement" value="Y">
                 <label class="form-check-label" for="flexCheckDefault"><strong>개인정보 수집에 동의합니다(필수) &nbsp;</strong></label>
                 <button type="button" class="btn btn-secondary btn-sm" onclick="popup()">약관보기</button>

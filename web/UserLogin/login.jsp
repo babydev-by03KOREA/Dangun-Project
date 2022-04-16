@@ -10,6 +10,22 @@
 <head>
     <title>로그인 부탁드려요!☺️</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        hr {
+            width: 700px;
+            margin: auto;
+        }
+        #kakao-login{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <jsp:include page="/menu.jsp"/>
@@ -28,6 +44,16 @@
             <button type="submit" class="btn btn-outline-success" style="width: 500px; text-align: center">로그인하기 🍀</button>
         </form>
     </div>
+    <span>
+        간편로그인
+    </span>
+    <span>
+        <hr/>
+    </span>
+    <div id="kakao-login">
+        <a href="#"><img src="/UserLogin/kakao_login_medium_wide.png" alt="kakao-login-button" width= "400px", height="auto" /></a>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
