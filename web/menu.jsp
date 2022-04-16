@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.io.PrintWriter" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Menu</title>
@@ -21,7 +21,7 @@
     %>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index-do.jsp" class="active">당근맛집🥕</a>
+            <a class="navbar-brand" href="/index-do.jsp">당근맛집🥕</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,20 +34,12 @@
                         <a class="nav-link" href="#">한눈에 보는 맛집</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">맛집 검색하기</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register/register.jsp">맛집 등록하기 - Admin🔐</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">맛집 수정/삭제 - Admin🔐</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">사이트 동작원리</a>
+                        <a class="nav-link" href="search/search.jsp">맛집 검색하기</a>
                     </li>
                 </ul>
             </div>
             <%
+                // 로그인이 되어있지 않는 경우에만 '로그인'과 '회원가입' 창이 뜰 수 있도록 변경
                 if(UserID == null) {
             %>
             <div>
@@ -55,11 +47,13 @@
                 <a href="/join/mainjoin.jsp" style="text-decoration: none; color: darkslategray">회원가입🔑</a>
             </div>
             <%
+                    // 로그인이 되어있는 경우에는 '로그아웃'과 '개인정보설정'이 가능하게 함.
                 } else {
             %>
             <div>
                 <a href="/logout/logoutPro.jsp" style="text-decoration: none; color: darkslategray">로그아웃</a> &nbsp; &nbsp;
-                <a href="/personal/mypage.jsp" style="text-decoration: none; color: darkslategray"><%=UserID%>님 환영합니다!🥳</a>
+                <a href="/personal/mypage.jsp" style="text-decoration: none; color: darkslategray"><c:out value = "${UserID}" />님 환영합니다!🥳</a>
+                <%-- JSTL로 out 구현됨. 기존 %=과 같은효과. --%>
             </div>
             <%
                 }

@@ -25,9 +25,14 @@
 </head>
 <body>
 <%
+    // Session
     String UserID = null;
+    // Attribute란 Servlet간 공유되는 객체이다.
+    // 다른 JSP 또는 서블릿에서 값을 가져올때 사용됨.
     if(session.getAttribute(UserID) != null){
+        // UserID라는 이름으로 세션값이 존재하는 회원들은
         UserID = (String) session.getAttribute("UserID");
+        // UserID에 자신에게 할당된 세션값을 담을 수 있도록 해줌
     }
     if (UserID != null) {
         PrintWriter script = response.getWriter();

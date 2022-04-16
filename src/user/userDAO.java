@@ -9,10 +9,10 @@ public class userDAO {
     private Connection conn;
     private PreparedStatement pstmt;
     private ResultSet rs;
-    String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql://localhost:3306/Michelin?useSSL=false&serverTimezone=Asia/Seoul";
-    String uid = "root";
-    String pwd = "database";
+    String driver = "oracle.jdbc.driver.OracleDriver";
+    String url = "jdbc:oracle:thin:@oracledatabase_medium?TNS_ADMIN=/Users/parkhyeongju/Downloads/Wallet_OracleDataBase";
+    String uid = "ADMIN";
+    String pwd = "database616125Os!";
 
     public userDAO() {
         try {
@@ -25,7 +25,7 @@ public class userDAO {
     }
 
     public int login(String userID, String userPassword) {
-        String SQL = "SELECT userPassword FROM user WHERE userID = ?"; // Parameter 값으로 들어온 UserID를 '?'에 들어가게 해 줌.
+        String SQL = "SELECT userPassword FROM delicious_user WHERE userID = ?"; // Parameter 값으로 들어온 UserID를 '?'에 들어가게 해 줌.
         try{
             pstmt = conn.prepareStatement(SQL);
             pstmt.setString(1, userID);
@@ -44,7 +44,7 @@ public class userDAO {
         return -2; // DATABASE ERROR
     }
     public int join(UserData user){
-        String SQL = "INSERT INTO user values(?,?,?,?,?,?)";
+        String SQL = "INSERT INTO delicious_user values(?,?,?,?,?,?)";
         try{
             pstmt = conn.prepareStatement(SQL);
             pstmt.setString(1, user.getUserID());

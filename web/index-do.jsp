@@ -68,7 +68,7 @@
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
                     <h2>관리자 또는 승인된 사용자이신가요?</h2>
                     <p>환영합니다~ 우리에 사이트를 더 풍부하게! 우리동네를 더 풍부하게! 관리자 권한으로 우리동네 맛집을 등록, 수정 혹은 삭제하세요. </p>
-                    <button class="btn btn-outline-light" type="button">관리자로 로그인하기(Admin)</button>
+                    <button class="btn btn-outline-light" type="button" onclick="location.href='/admin/registration/register.jsp'">관리자로 로그인하기(Admin)</button>
                 </div>
             </div>
             <div class="col-md-6">
