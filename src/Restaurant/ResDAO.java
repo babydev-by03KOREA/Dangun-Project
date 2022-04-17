@@ -2,10 +2,7 @@ package Restaurant;
 
 import dbconnect.DBOpen;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class ResDAO {
@@ -143,5 +140,22 @@ public class ResDAO {
         } catch (Exception e) {
             System.out.println("Update Commends was denied for "+e);
         }
+    }
+
+    public ResDTO delete_breaktime(String Name){
+        ResDTO rrdto = new ResDTO();
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        String sql = "UPDATE DELICIOUS SET BREAKTIME1=null, BREAKTIME2=null WHERE NAME=? ";
+        try {
+            con = DBOpen.getConnection();
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, Name);
+            pstmt.executeUpdate();
+            con.close();
+        } catch (Exception e) {
+            System.out.println("You're BreaktimeDelete Commands was denide for "+e);
+        }
+        return rrdto;
     }
 }

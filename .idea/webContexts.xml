@@ -4,6 +4,8 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/web/UserLogin" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/admin/registration/modify.jsp" value="file://$PROJECT_DIR$/web/admin/registration" />
+        <entry key="file://$PROJECT_DIR$/web/admin/registration/modifyPro.jsp" value="file://$PROJECT_DIR$/web/admin/registration" />
         <entry key="file://$PROJECT_DIR$/web/admin/registration/registerPro.jsp" value="file://$PROJECT_DIR$/web/admin/registration" />
         <entry key="file://$PROJECT_DIR$/web/datacall.jsp" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/index.jsp" value="file://$PROJECT_DIR$/web" />

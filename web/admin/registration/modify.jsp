@@ -1,11 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="Restaurant.ResDAO" %>
-<%@ page import="Restaurant.ResDTO" %><%--
-  Created by IntelliJ IDEA.
-  User: parkhyeongju
-  Date: 2022/03/19
-  Time: 9:06 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="Restaurant.ResDTO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -73,11 +68,15 @@
     <div class="input-group mb-3">
         <input type="time" name="breaktime2" class="form-control" placeholder="등록할 맛집 BreakTime을 입력하세요.(없으면 입력X)" aria-label="Recipient's username" value="<%=rdto.getBreaktime2()%>">
     </div>
-    <div style="margin-left: 1400px; margin-top: 30px">
-        <button type="reset" class="btn btn-outline-success">Breaktime 삭제</button>
-        <button type="submit" class="btn btn-outline-success">정보 변경🔨</button>
+    <div style="margin-top: 40px; margin-left: 1500px">
+        <button type="submit" class="btn btn-outline-success">정보 변경 🔨</button>
     </div>
 </form>
+
+<form style= "margin-top: 5px; margin-left: 1500px" action="<%=request.getContextPath()%>/admin/registration/RestimeDeletePro.jsp?Name=<%=rdto.getName()%>" method="post">
+    <button type="submit" class="btn btn-outline-success">Breaktime 삭제 🗑</button>
+</form>
+
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
     window.onload = function(){

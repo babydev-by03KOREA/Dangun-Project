@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="Restaurant.ResDTO" %>
 <%@ page import="Restaurant.ResDAO " %>
 <%@ page import="java.util.ArrayList" %>
