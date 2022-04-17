@@ -31,7 +31,7 @@
                         <a class="nav-link" href="/index.jsp">맛집조회</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">한눈에 보는 맛집</a>
+                        <a class="nav-link" href="#">위치기반 맛집찾기</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="search/search.jsp">맛집 검색하기</a>

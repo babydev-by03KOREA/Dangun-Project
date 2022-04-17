@@ -154,8 +154,27 @@ public class ResDAO {
             pstmt.executeUpdate();
             con.close();
         } catch (Exception e) {
-            System.out.println("You're BreaktimeDelete Commands was denide for "+e);
+            System.out.println("You're BreaktimeDelete Commands was denied for "+e);
         }
         return rrdto;
     }
+
+    public ResDTO delete_Res(String Name){
+        ResDTO rrrdto = new ResDTO();
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        String sql = null;
+        try {
+            con = DBOpen.getConnection();
+            sql = "DELETE FROM DELICIOUS WHERE NAME=?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1,Name);
+            pstmt.executeUpdate();
+            con.close();
+        }catch(Exception e){
+            System.out.println("You're Delete Commands was denied for "+e);
+        }
+        return rrrdto;
+    }
+
 }

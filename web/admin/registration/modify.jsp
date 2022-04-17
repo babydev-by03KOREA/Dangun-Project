@@ -8,9 +8,10 @@
     <link href="/css/input.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
+<br>
 <jsp:include page="/admin_menu.jsp"/>
-<h2 style="margin-left: 40px; margin-top: 18px;"><b>우리동네 맛집 등록하기 🍽</b></h2>
+<h2 style="margin-left: 40px; margin-top: 18px;""><b>관리자 맛집 정보관리</b></h2>
+<p style="margin-left: 40px; margin-top: 15px;">한번 삭제 시 복구가 불가하오니 신중하게 삭제 부탁드리며 <br/> 귀하에 노고에 감사드립니다!</p>
 <%
     request.setCharacterEncoding("UTF-8");
 
@@ -75,6 +76,10 @@
 
 <form style= "margin-top: 5px; margin-left: 1500px" action="<%=request.getContextPath()%>/admin/registration/RestimeDeletePro.jsp?Name=<%=rdto.getName()%>" method="post">
     <button type="submit" class="btn btn-outline-success">Breaktime 삭제 🗑</button>
+</form>
+
+<form style= "margin-top: 5px; margin-left: 1500px" action="<%=request.getContextPath()%>/admin/registration/ResDeletePro.jsp?Name=<%=rdto.getName()%>" method="post">
+    <button type="submit" class="btn btn-outline-success">식당 삭제(복구불가!) 🗑</button>
 </form>
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>

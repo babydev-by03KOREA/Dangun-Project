@@ -11,8 +11,8 @@
 </head>
 <body>
 <jsp:include page="/admin_menu.jsp"/>
-<h2 style="margin-left: 100px; margin-top: 10px;"><b>관리자 Data수정</b></h2>
-<p style="margin-left: 100px; margin-top: 15px;">'상호명'을 클릭하시면 상세정보 수정이 가능합니다!</p>
+<h2 style="margin-left: 40px; margin-top: 18px;"><b>관리자 Data수정</b></h2>
+<p style="margin-left: 40px; margin-top: 15px;">'상호명'을 클릭하시면 상세정보 수정이 가능합니다!</p>
 
 <table class="table table-striped" style="margin-top: 50px;text-align: center;">
     <%

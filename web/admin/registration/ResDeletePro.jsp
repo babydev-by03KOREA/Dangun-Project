@@ -3,16 +3,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Restime Delete</title>
+    <title>Restaurants Delete</title>
 </head>
 <body>
-  <%
+<%
     request.setCharacterEncoding("UTF-8");
     String Name = request.getParameter("Name");
     ResDAO rdao = new ResDAO();
-    ResDTO rrdto = rdao.delete_breaktime(Name);
+    ResDTO rrdto = rdao.delete_Res(Name);
 
     response.sendRedirect("/admin/registration/crud.jsp");
-  %>
+%>
 </body>
 </html>
